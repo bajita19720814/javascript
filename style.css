@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+}
+header {
+  position: relative;
+  background-color: skyblue;
+  margin: 0;
+  height: 120px;
+}
+.ushi {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  display: block;
+  width: 48px;
+  height: 24px;
+  animation: fly 30s infinite linear;
+}
+.tora {
+  position: absolute;
+  top: 15px;
+  left: 1000px;
+  display: block;
+  width: 48px;
+  height: 24px;
+  animation: fly 30s infinite linear;
+}
+@keyframes fly {
+  0% {
+    transform: scaleX(-1) translateX(1000px);
+  }
+  49% {
+    transform: scaleX(-1) translateX(0);
+  }  
+  50% {
+    transform: scaleX(1) translateX(0);
+  }  
+  100% {
+    transform: scaleX(1) translateX(-1000px);
+  }  
+}
+.cloud3 {
+  position: absolute;
+  top: 5px;
+  right: 300px;
+  display: block;
+  width: 85px;
+  height: 50px;
+  animation: clouds 60s linear infinite;
+}
+.cloud2 {
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  display: block;
+  width: 100px;
+  height: 36px;
+  animation: clouds 60s linear infinite;
+}
+.cloud4 {
+  position: absolute;
+  top: 55px;
+  right: 160px;
+  display: block;
+  width: 60px;
+  height: 36px;
+  animation: clouds 60s linear infinite;
+}
+.cloud1 {
+  position: absolute;
+  top: 45px;
+  left: 80px;
+  display: block;
+  width: 48px;
+  height: 34px;
+  animation: clouds 60s linear infinite;
+}
+@keyframes clouds {
+  0% {
+    transform: translateX(-100px) scale(1, 1);
+  }
+  50% {
+    transform: translateX(0) scale(1.1, 0.95);
+  }
+  100% {
+    transform: translateX(100px) scale(1, 1);
+  }
+}
+header h1 {
+  position: absolute;
+  font-size: 18px;
+  bottom: 0px;
+  right: 16px;
+}
+nav {
+  background-color: blue;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+li {
+  height: 32px;
+  margin: 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+nav div {  
+  height: 32px;
+  padding-left: 16px; 
+  border: 1px solid skyblue;
+  cursor: pointer;
+}
+nav p {
+  margin: 0;
+  line-height: 32px;
+  color: #fff;
+  font-size: 14px;
+}
+nav div:hover {
+  opacity: 0.8;
+}
+nav section {
+  display: none;
+}
+nav section.show {
+  display: block;
+}
+nav div.active {
+  height: 190px;
+}
+footer {
+  margin: 0;
+  height: 60px;
+  background-color: #432;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+  line-height: 60px;
+}
+main {
+  margin: 0;
+  padding: 32px;
+  background-color: mistyrose;
+}
+article {
+  margin-bottom: 32px;
+}
+article section {
+  margin-bottom: 32px;
+}
+article h1 {
+  font-size: 18px;
+  margin: 0;
+}
+article h2 {
+  font-size: 14px;
+  margin-top: 24px;
+}
+article p {
+  font-size: 14px;
+  line-height: 1.35rem;
+  margin: 8px;
+}
+.md-18 {
+  font-size: 18px;
+  background-color: #fafafa;
+  border-radius: 3px;
+}
+pre {
+  margin: 0;
+}
+hr {
+  margin: 4px;
+}
+article img{
+  width: 350px;
+  height: 160px;
+}
+.html3 {
+  width: 320px;
+  height: 220px;
+}
+.html4, .html5, .html6, .html7, .css1 {
+  width: 60px;
+  height: 60px;
+}
+.dotinstall, .progate {
+  width: 120px;
+  height: 32px;
+}
+.learnmore div {
+  display: flex;
+  align-items: center;
+}
+.learnmore div p {
+  margin-left: 32px;
+}
+.learnmore a {
+  display: block;
+}
+.book {
+  width: 80px;
+  height: 105px;
+  margin-bottom: 8px;
+}
+@media (min-width:510px) {
+  nav {
+    display: flex;
+  }
+  nav div {
+    border: none;
+  }
+  nav div:nth-child(1) {
+    width: 75px;
+  }  
+  nav div:nth-child(2) {
+    width: 205px; 
+  }  
+  nav div:nth-child(3) {
+    width: calc(100% - 280px); 
+  }  
+}
+@media (min-width: 600px) {
+  .try div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin: 16px 0;
+  } 
+  .try div p {
+    margin-left: 32px;
+  } 
+
+}
+@media (min-width: 950px) {
+  article {
+    width: 870px;
+    margin: 0 auto;
+  }  
+}

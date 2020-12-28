@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="img/ushi.png" class="ushi">
+    <img src="img/tora.png" class="tora">
+    <img src="img/cloud2.png" class="cloud1">
+    <img src="img/cloud2.png" class="cloud2">
+    <img src="img/cloud2.png" class="cloud3">
+    <img src="img/cloud2.png" class="cloud4">
+    <h1>48才からプログラミングをはじめてみた</h1>
+  </header>
+  <nav>
+    <div><p><a href="https://bajita19720814.github.io">ホーム</a></p></div>
+    <div data-id="programing">
+      <p>試そう！プログラミング</p>
+      <section id="programing">
+        <ul>
+          <li><a href="https://bajita19720814.github.io/sitemake/.">HTML+CSS</a></li>
+          <li><a href="https://bajita19720814.github.io/scratch/.">Scratch</a></li>
+          <li><a href="https://bajita19720814.github.io/javascript/.">JavaScript</a></li>
+          <li><a href="">PHP:製作中</a></li>
+      </section>
+    </div>
+    <div data-id="minigame">
+      <p>ミニゲーム</p>
+      <section id="minigame">
+        <ul>
+          <li><a href="https://bajita19720814.github.io/colorgame/.">
+          色のミニゲーム</a></li>
+          <li><a href="https://bajita19720814.github.io/cardgame/.">
+          神経衰弱ゲーム</a></li>
+          <li><a href="https://bajita19720814.github.io/dategame/.">時間と日付のゲーム</a></li>
+          <li><a href="https://bajita19720814.github.io/busgame/.">バスの乗客ゲーム</a></li>
+          <li><a href="https://bajita19720814.github.io/shootinggame/.">シューティングゲーム</a></li>
+        </ul>
+      </section>
+    </div>
+  </nav> 
+  <main>
+    <article>
+      <h1>JavaScript</h1>
+      <section class="try">
+        <h2>まず、メモ帳機能を使ってブラウザに文字を表示してみよう！</h2>
+        <p>メモ帳を開いて、下のコードをコピー、ペーストします。改行や空白もそのままコピーしてください。
+        </p>
+        <hr>
+        <pre>
+          <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;JavaScriptをためしてみよう&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;
+クリックしてみよう!
+&lt;/h1&gt;
+&lt;script src="main.js"&gt; &lt;/script&gt; 
+&lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+        <hr>
+        <div>
+        <p>デスクトップ上にファイルを保存します。保存の仕方は<strong>HTML+CSS</strong>を参照してください。<br>保存したファイルをブラウザで開くと文字が表示されます。</p>
+        <img src="img/js1.png" alt="" class="js1">
+        </div>
+        
+        <h2>クリック操作で文字の色や大きさを変更できるようにしよう。</h2>
+        <p>新しくメモ帳を開いて下のコードをコピー、ペーストして同じようにデスクトップに保存してください。必ずデスクトップに保存し、ファイル名は　<strong>main.js</strong>　にしてください。</p>
+        <hr>
+        <pre>
+          <code>
+const h1 = document.querySelector('h1');
+document.addEventListener('click', () => {
+  h1.textContent = 'テキストの色が変わりました！';
+  h1.style.color = 'red';
+  h1.style.fontSize = '16px';
+});
+          </code></pre>
+          <hr>
+          <div>
+            <p>先ほどのブラウザをリロード<i class="material-icons md-18" class="reload">
+              refresh
+            </i>してください。文字をクリックすると表示が変わりましたね。今回は最初の文字に戻す設定はしていませんので、最初の文字に戻したいときはページをリロードしてください。</p>
+            <img src="img/js3.png">
+          </div>
+          <div>
+            <p>メモ帳で<strong>main.js</strong>ファイルをひらいて、<strong>textContent</strong>には表示させたい文章、<strong>color</strong>は文字の色、<strong>fontSize</strong>は文字の大きさを変更し、ファイルを上書き保存します。</p>
+            <img src="img/js2.png">
+          </div>
+          <div>
+            <p>ブラウザでのファイルをリロードして文字をクリックするとクリックしたときの表示される内容が変わります。 </p>
+            <img src="img/js4.png">
+          </div>
+      </section>
+      <section class="learnmore">
+        <h2>無料の学習サイトを活用しよう</h2>
+        <p>dotinstallとprogateが有名です。私はdotinstallを利用しています。有料のレッスンではたくさん作品を作りながら動かし方を学ぶことができます。</p>
+        <div>
+          <a href="https://dotinstall.com"><img src="img/dotinstall.png" class="dotinstall"></a>
+          <p>動画で学べます。無料で公開されているレッスンもあり、動画を視聴するだけなら会員登録せずに見ることができます。</p>
+        </div>
+        <div>
+          <a href="https://prog-8.com"><img src="img/progate.png" class="progate"></a>
+          <p>イラスト中心のスライドで学べます。無料で公開されているレッスンもありますが、会員登録は必要です。ブラウザ上でコードを書いて結果を確認できます。</p>
+        </div>
+        <!-- <h2>本も活用しよう</h2>
+        <div>
+          <img src="img/bookJavaScript.png" class="book">
+          <p></p>
+        </div> -->
+        
+      </section>
+    </article>
+
+  </main>
+  <footer>
+    bajita19720814.github.io
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
+
